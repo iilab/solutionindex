@@ -90,16 +90,15 @@
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/relation"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/elements/1.1/contributor"/>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/available">
         <rdfs:label xml:lang="en">Date Available</rdfs:label>
         <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:comment xml:lang="en">Date (often a range) that the resource became or will become available.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#available-003"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/elements/1.1/contributor"/>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/dateSubmitted">
         <rdfs:label xml:lang="en">Date Submitted</rdfs:label>
         <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2002-07-13</terms:issued>
@@ -107,7 +106,14 @@
         <rdfs:comment xml:lang="en">Date of submission of the resource.</rdfs:comment>
         <terms:description xml:lang="en">Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal).</terms:description>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#dateSubmitted-002"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
+        <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/created">
+        <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
+        <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#created-003"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/coverage">
@@ -118,15 +124,6 @@
         <rdfs:comment xml:lang="en">The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#coverageT-001"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/coverage"/>
-        <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/created">
-        <rdfs:label xml:lang="en">Date Created</rdfs:label>
-        <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
-        <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
-        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
-        <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#created-003"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/source">
@@ -243,7 +240,6 @@
         <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
         <terms:description xml:lang="en">Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</terms:description>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#dateAccepted-002"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/hasFormat">
@@ -267,16 +263,15 @@
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/coverage"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/elements/1.1/identifier"/>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/issued">
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
         <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#issued-003"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/elements/1.1/identifier"/>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/relation">
         <rdfs:label xml:lang="en">Relation</rdfs:label>
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
@@ -294,7 +289,6 @@
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:comment xml:lang="en">Date of copyright.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#dateCopyrighted-002"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/mediator">
@@ -315,7 +309,15 @@
         <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
         <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#descriptionT-001"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/description"/>
+        <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/accrualPolicy">
+        <rdfs:label xml:lang="en">Accrual Policy</rdfs:label>
+        <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2005-06-13</terms:issued>
+        <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2010-10-11</terms:modified>
+        <rdfs:comment xml:lang="en">The policy governing the addition of items to a collection.</rdfs:comment>
+        <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#accrualPolicy-003"/>
+        <rdfs:domain rdf:resource="&http;purl.org/dc/dcmitype/Collection"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/hasVersion">
@@ -329,15 +331,6 @@
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/relation"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/accrualPolicy">
-        <rdfs:label xml:lang="en">Accrual Policy</rdfs:label>
-        <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2005-06-13</terms:issued>
-        <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2010-10-11</terms:modified>
-        <rdfs:comment xml:lang="en">The policy governing the addition of items to a collection.</rdfs:comment>
-        <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#accrualPolicy-003"/>
-        <rdfs:domain rdf:resource="&http;purl.org/dc/dcmitype/Collection"/>
-        <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/date">
         <rdfs:label xml:lang="en">Date</rdfs:label>
         <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
@@ -345,16 +338,6 @@
         <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
         <terms:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</terms:description>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#dateT-001"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
-        <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/valid">
-        <rdfs:label xml:lang="en">Date Valid</rdfs:label>
-        <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
-        <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
-        <rdfs:comment xml:lang="en">Date (often a range) of validity of a resource.</rdfs:comment>
-        <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#valid-003"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/publisher">
@@ -365,6 +348,14 @@
         <terms:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service.</terms:description>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#publisherT-001"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/publisher"/>
+        <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/valid">
+        <rdfs:label xml:lang="en">Date Valid</rdfs:label>
+        <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:comment xml:lang="en">Date (often a range) of validity of a resource.</rdfs:comment>
+        <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#valid-003"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/isPartOf">
@@ -384,7 +375,6 @@
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#modified-003"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/elements/1.1/language"/>
@@ -419,16 +409,6 @@
         <rdfs:domain rdf:resource="&http;purl.org/dc/dcmitype/Collection"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/spatial">
-        <rdfs:label xml:lang="en">Spatial Coverage</rdfs:label>
-        <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
-        <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
-        <rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>
-        <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#spatial-003"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/coverage"/>
-        <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/coverage"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/replaces">
         <rdfs:label xml:lang="en">Replaces</rdfs:label>
         <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
@@ -439,6 +419,16 @@
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/relation"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/spatial">
+        <rdfs:label xml:lang="en">Spatial Coverage</rdfs:label>
+        <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>
+        <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#spatial-003"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/coverage"/>
+        <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/coverage"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/contributor">
         <rdfs:label xml:lang="en">Contributor</rdfs:label>
@@ -456,7 +446,6 @@
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2010-10-11</terms:modified>
         <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#titleT-002"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/title"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     <rdf:Description rdf:about="&http;purl.org/dc/terms/audience">
@@ -497,7 +486,6 @@
         <rdfs:comment xml:lang="en">An alternative name for the resource.</rdfs:comment>
         <terms:description xml:lang="en">The distinction between titles and alternative titles is application-specific.</terms:description>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#alternative-003"/>
-        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/title"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&http;purl.org/dc/terms/format">
@@ -805,6 +793,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#isSolvedBy -->
+
+    <owl:ObjectProperty rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#isSolvedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#solves -->
+
+    <owl:ObjectProperty rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#solves">
+        <rdfs:range rdf:resource="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Problem"/>
+        <rdfs:domain rdf:resource="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Solution"/>
+        <owl:inverseOf rdf:resource="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#isSolvedBy"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -825,6 +829,7 @@
         <rdfs:comment xml:lang="en">An alternative name for the resource.</rdfs:comment>
         <terms:description xml:lang="en">The distinction between titles and alternative titles is application-specific.</terms:description>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#alternative-003"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/title"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/title"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -840,6 +845,7 @@
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:comment xml:lang="en">Date (often a range) that the resource became or will become available.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#available-003"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/date"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -871,6 +877,7 @@
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#created-003"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/date"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -887,6 +894,7 @@
         <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
         <terms:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</terms:description>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#dateT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
@@ -902,6 +910,7 @@
         <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
         <terms:description xml:lang="en">Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</terms:description>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#dateAccepted-002"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/date"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -917,6 +926,7 @@
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:comment xml:lang="en">Date of copyright.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#dateCopyrighted-002"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/date"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -933,10 +943,26 @@
         <rdfs:comment xml:lang="en">Date of submission of the resource.</rdfs:comment>
         <terms:description xml:lang="en">Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal).</terms:description>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#dateSubmitted-002"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/date"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <rdf:Description rdf:about="&http;purl.org/dc/terms/description">
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <terms:issued rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
+        <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#descriptionT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/description"/>
+        <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
+    </rdf:Description>
     
 
 
@@ -963,6 +989,7 @@
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#issued-003"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/date"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -978,6 +1005,7 @@
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#modified-003"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/date"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -993,6 +1021,7 @@
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2010-10-11</terms:modified>
         <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#titleT-002"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/title"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
     </rdf:Description>
@@ -1007,6 +1036,7 @@
         <terms:modified rdf:datatype="&http;www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
         <rdfs:comment xml:lang="en">Date (often a range) of validity of a resource.</rdfs:comment>
         <terms:hasVersion rdf:resource="&http;dublincore.org/usage/terms/history/#valid-003"/>
+        <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/elements/1.1/date"/>
         <rdfs:isDefinedBy rdf:resource="&http;purl.org/dc/terms/"/>
         <rdfs:subPropertyOf rdf:resource="&http;purl.org/dc/terms/date"/>
         <rdfs:range rdf:resource="&http;www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -1390,6 +1420,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Solution -->
+
+    <owl:Class rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Solution"/>
+    
+
+
     <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#State -->
 
     <owl:Class rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#State">
@@ -1580,20 +1616,20 @@
     <rdf:Description>
         <rdf:type rdf:resource="&http;www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Affiliation"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Intention"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Motivation"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Relationship"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#State"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Activity"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Event"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Instance"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Project"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Task"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&http;www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Location"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Object"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Organisation"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Person"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Behavioral"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Cultural"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Intentional"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Social"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1609,11 +1645,11 @@
     <rdf:Description>
         <rdf:type rdf:resource="&http;www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Activity"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Event"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Instance"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Project"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Task"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Affiliation"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Intention"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Motivation"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Relationship"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#State"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1630,15 +1666,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="&http;www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Behavioral"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Cultural"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Intentional"/>
-            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Social"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&http;www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#City"/>
             <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Continent"/>
             <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Country"/>
@@ -1646,9 +1673,18 @@
             <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Region"/>
         </owl:members>
     </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&http;www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Location"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Object"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Organisation"/>
+            <rdf:Description rdf:about="&http;www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Person"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
 
