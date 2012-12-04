@@ -101,7 +101,7 @@
         <Class abbreviatedIRI=":Lack"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Layers"/>
+        <Class abbreviatedIRI=":Layer"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI=":Location"/>
@@ -137,7 +137,7 @@
         <Class abbreviatedIRI=":Platform"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Problems"/>
+        <Class abbreviatedIRI=":Problem"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI=":Process"/>
@@ -182,10 +182,19 @@
         <Class abbreviatedIRI=":Tool"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Solution"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI=":hasData"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI=":hasSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSolvedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#solves"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="terms:alternative"/>
@@ -479,7 +488,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Concept"/>
-        <Class abbreviatedIRI=":Layers"/>
+        <Class abbreviatedIRI=":Layer"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Continent"/>
@@ -495,7 +504,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Data"/>
-        <Class abbreviatedIRI=":Layers"/>
+        <Class abbreviatedIRI=":Layer"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Documentation"/>
@@ -503,7 +512,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Entity"/>
-        <Class abbreviatedIRI=":Layers"/>
+        <Class abbreviatedIRI=":Layer"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Event"/>
@@ -515,7 +524,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Gap"/>
-        <Class abbreviatedIRI=":Problems"/>
+        <Class abbreviatedIRI=":Problem"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Hardware"/>
@@ -547,7 +556,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Lack"/>
-        <Class abbreviatedIRI=":Problems"/>
+        <Class abbreviatedIRI=":Problem"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Location"/>
@@ -571,7 +580,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Need"/>
-        <Class abbreviatedIRI=":Problems"/>
+        <Class abbreviatedIRI=":Problem"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Neighborhood"/>
@@ -587,7 +596,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Pattern"/>
-        <Class abbreviatedIRI=":Layers"/>
+        <Class abbreviatedIRI=":Layer"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Person"/>
@@ -599,7 +608,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Process"/>
-        <Class abbreviatedIRI=":Layers"/>
+        <Class abbreviatedIRI=":Layer"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":ProgrammingLanguage"/>
@@ -688,7 +697,7 @@
         <Class abbreviatedIRI=":Process"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":Layers"/>
+        <Class abbreviatedIRI=":Layer"/>
         <Class abbreviatedIRI=":Quadrant"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -709,8 +718,18 @@
         <ObjectProperty abbreviatedIRI=":hasData"/>
         <ObjectProperty abbreviatedIRI=":hasSensor"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#solves"/>
+        <ObjectProperty IRI="#isSolvedBy"/>
+    </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty abbreviatedIRI=":hasSensor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isSolvedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#solves"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty abbreviatedIRI=":hasData"/>
@@ -722,6 +741,10 @@
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI=":hasSensor"/>
         <Class abbreviatedIRI=":Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#solves"/>
+        <Class abbreviatedIRI=":Problem"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty abbreviatedIRI="terms:alternative"/>
