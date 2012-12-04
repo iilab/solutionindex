@@ -14,8 +14,8 @@
 ]>
 
 
-<rdf:RDF xmlns="http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#"
-     xml:base="http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex"
+<rdf:RDF xmlns="http://iilab.org/solutionindex#"
+     xml:base="http://iilab.org/solutionindex"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -25,7 +25,8 @@
      xmlns:kr="http://webprotege.stanford.edu/ontologies/10c8a747-097a-40af-b198-9e8244097968#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:si="http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex">
+    <owl:Ontology rdf:about="http://iilab.org/solutionindex">
+        <owl:versionIRI rdf:resource="http://iilab.org/solutionindex/0.1"/>
         <owl:imports rdf:resource="http://purl.org/NET/c4dm/event.owl"/>
         <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
         <owl:imports rdf:resource="http://rdfs.org/sioc/ns#"/>
@@ -771,37 +772,37 @@
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#hasData -->
+    <!-- http://iilab.org/solutionindex#hasData -->
 
-    <owl:ObjectProperty rdf:about="&si;hasData">
+    <owl:ObjectProperty rdf:about="http://iilab.org/solutionindex#hasData">
         <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
-        <owl:inverseOf rdf:resource="&si;hasSensor"/>
+        <owl:inverseOf rdf:resource="http://iilab.org/solutionindex#hasSensor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#hasSensor -->
+    <!-- http://iilab.org/solutionindex#hasSensor -->
 
-    <owl:ObjectProperty rdf:about="&si;hasSensor">
+    <owl:ObjectProperty rdf:about="http://iilab.org/solutionindex#hasSensor">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&si;Data"/>
-        <rdfs:range rdf:resource="&si;Sensor"/>
+        <rdfs:domain rdf:resource="http://iilab.org/solutionindex#Data"/>
+        <rdfs:range rdf:resource="http://iilab.org/solutionindex#Sensor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#isSolvedBy -->
+    <!-- http://iilab.org/solutionindex#isSolvedBy -->
 
-    <owl:ObjectProperty rdf:about="&si;isSolvedBy"/>
+    <owl:ObjectProperty rdf:about="http://iilab.org/solutionindex#isSolvedBy"/>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#solves -->
+    <!-- http://iilab.org/solutionindex#solves -->
 
-    <owl:ObjectProperty rdf:about="&si;solves">
-        <rdfs:range rdf:resource="&si;Problem"/>
-        <rdfs:domain rdf:resource="&si;Solution"/>
-        <owl:inverseOf rdf:resource="&si;isSolvedBy"/>
+    <owl:ObjectProperty rdf:about="http://iilab.org/solutionindex#solves">
+        <rdfs:range rdf:resource="http://iilab.org/solutionindex#Problem"/>
+        <rdfs:domain rdf:resource="http://iilab.org/solutionindex#Solution"/>
+        <owl:inverseOf rdf:resource="http://iilab.org/solutionindex#isSolvedBy"/>
     </owl:ObjectProperty>
     
 
@@ -1052,404 +1053,404 @@
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#API -->
+    <!-- http://iilab.org/solutionindex#API -->
 
-    <owl:Class rdf:about="&si;API">
-        <rdfs:subClassOf rdf:resource="&si;Technology"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#API">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Technology"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Activity -->
+    <!-- http://iilab.org/solutionindex#Activity -->
 
-    <owl:Class rdf:about="&si;Activity">
-        <rdfs:subClassOf rdf:resource="&si;Process"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Activity">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Process"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Affiliation -->
+    <!-- http://iilab.org/solutionindex#Affiliation -->
 
-    <owl:Class rdf:about="&si;Affiliation">
-        <rdfs:subClassOf rdf:resource="&si;Pattern"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Affiliation">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Pattern"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Behavioral -->
+    <!-- http://iilab.org/solutionindex#Behavioral -->
 
-    <owl:Class rdf:about="&si;Behavioral">
-        <rdfs:subClassOf rdf:resource="&si;Quadrant"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Behavioral">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Quadrant"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#City -->
+    <!-- http://iilab.org/solutionindex#City -->
 
-    <owl:Class rdf:about="&si;City">
-        <rdfs:subClassOf rdf:resource="&si;Location"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#City">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Location"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Concept -->
+    <!-- http://iilab.org/solutionindex#Concept -->
 
-    <owl:Class rdf:about="&si;Concept">
-        <rdfs:subClassOf rdf:resource="&si;Layer"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Concept">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Layer"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Continent -->
+    <!-- http://iilab.org/solutionindex#Continent -->
 
-    <owl:Class rdf:about="&si;Continent">
-        <rdfs:subClassOf rdf:resource="&si;Location"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Continent">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Location"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Country -->
+    <!-- http://iilab.org/solutionindex#Country -->
 
-    <owl:Class rdf:about="&si;Country">
-        <rdfs:subClassOf rdf:resource="&si;Location"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Country">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Location"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Cultural -->
+    <!-- http://iilab.org/solutionindex#Cultural -->
 
-    <owl:Class rdf:about="&si;Cultural">
-        <rdfs:subClassOf rdf:resource="&si;Quadrant"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Cultural">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Quadrant"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Data -->
+    <!-- http://iilab.org/solutionindex#Data -->
 
-    <owl:Class rdf:about="&si;Data">
-        <rdfs:subClassOf rdf:resource="&si;Layer"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Data">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Layer"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Documentation -->
+    <!-- http://iilab.org/solutionindex#Documentation -->
 
-    <owl:Class rdf:about="&si;Documentation">
-        <rdfs:subClassOf rdf:resource="&si;Tool"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Documentation">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Tool"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Entity -->
+    <!-- http://iilab.org/solutionindex#Entity -->
 
-    <owl:Class rdf:about="&si;Entity">
-        <rdfs:subClassOf rdf:resource="&si;Layer"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Entity">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Layer"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Event -->
+    <!-- http://iilab.org/solutionindex#Event -->
 
-    <owl:Class rdf:about="&si;Event">
-        <rdfs:subClassOf rdf:resource="&si;Process"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Event">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Process"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Framework -->
+    <!-- http://iilab.org/solutionindex#Framework -->
 
-    <owl:Class rdf:about="&si;Framework">
-        <rdfs:subClassOf rdf:resource="&si;Technology"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Framework">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Technology"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Gap -->
+    <!-- http://iilab.org/solutionindex#Gap -->
 
-    <owl:Class rdf:about="&si;Gap">
-        <rdfs:subClassOf rdf:resource="&si;Problem"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Gap">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Problem"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Hardware -->
+    <!-- http://iilab.org/solutionindex#Hardware -->
 
-    <owl:Class rdf:about="&si;Hardware">
-        <rdfs:subClassOf rdf:resource="&si;Technology"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Hardware">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Technology"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Idea -->
+    <!-- http://iilab.org/solutionindex#Idea -->
 
-    <owl:Class rdf:about="&si;Idea">
-        <rdfs:subClassOf rdf:resource="&si;Concept"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Idea">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Concept"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Information -->
+    <!-- http://iilab.org/solutionindex#Information -->
 
-    <owl:Class rdf:about="&si;Information">
-        <rdfs:subClassOf rdf:resource="&si;Concept"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Information">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Concept"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Instance -->
+    <!-- http://iilab.org/solutionindex#Instance -->
 
-    <owl:Class rdf:about="&si;Instance">
-        <rdfs:subClassOf rdf:resource="&si;Process"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Instance">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Process"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Intention -->
+    <!-- http://iilab.org/solutionindex#Intention -->
 
-    <owl:Class rdf:about="&si;Intention">
-        <rdfs:subClassOf rdf:resource="&si;Pattern"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Intention">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Pattern"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Intentional -->
+    <!-- http://iilab.org/solutionindex#Intentional -->
 
-    <owl:Class rdf:about="&si;Intentional">
-        <rdfs:subClassOf rdf:resource="&si;Quadrant"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Intentional">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Quadrant"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Knowledge -->
+    <!-- http://iilab.org/solutionindex#Knowledge -->
 
-    <owl:Class rdf:about="&si;Knowledge">
-        <rdfs:subClassOf rdf:resource="&si;Concept"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Knowledge">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Concept"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Lack -->
+    <!-- http://iilab.org/solutionindex#Lack -->
 
-    <owl:Class rdf:about="&si;Lack">
-        <rdfs:subClassOf rdf:resource="&si;Problem"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Lack">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Problem"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Layer -->
+    <!-- http://iilab.org/solutionindex#Layer -->
 
-    <owl:Class rdf:about="&si;Layer">
-        <owl:disjointWith rdf:resource="&si;Quadrant"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Layer">
+        <owl:disjointWith rdf:resource="http://iilab.org/solutionindex#Quadrant"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Location -->
+    <!-- http://iilab.org/solutionindex#Location -->
 
-    <owl:Class rdf:about="&si;Location">
-        <rdfs:subClassOf rdf:resource="&si;Entity"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Location">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Methodology -->
+    <!-- http://iilab.org/solutionindex#Methodology -->
 
-    <owl:Class rdf:about="&si;Methodology">
-        <rdfs:subClassOf rdf:resource="&si;Tool"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Methodology">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Tool"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Model -->
+    <!-- http://iilab.org/solutionindex#Model -->
 
-    <owl:Class rdf:about="&si;Model">
-        <rdfs:subClassOf rdf:resource="&si;Tool"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Model">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Tool"/>
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Motivation -->
+    <!-- http://iilab.org/solutionindex#Motivation -->
 
-    <owl:Class rdf:about="&si;Motivation">
-        <rdfs:subClassOf rdf:resource="&si;Pattern"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Motivation">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Pattern"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Need -->
+    <!-- http://iilab.org/solutionindex#Need -->
 
-    <owl:Class rdf:about="&si;Need">
-        <rdfs:subClassOf rdf:resource="&si;Problem"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Need">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Problem"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Neighborhood -->
+    <!-- http://iilab.org/solutionindex#Neighborhood -->
 
-    <owl:Class rdf:about="&si;Neighborhood">
-        <rdfs:subClassOf rdf:resource="&si;Location"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Neighborhood">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Location"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Object -->
+    <!-- http://iilab.org/solutionindex#Object -->
 
-    <owl:Class rdf:about="&si;Object">
-        <rdfs:subClassOf rdf:resource="&si;Entity"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Object">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Organisation -->
+    <!-- http://iilab.org/solutionindex#Organisation -->
 
-    <owl:Class rdf:about="&si;Organisation">
-        <rdfs:subClassOf rdf:resource="&si;Entity"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Organisation">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Pattern -->
+    <!-- http://iilab.org/solutionindex#Pattern -->
 
-    <owl:Class rdf:about="&si;Pattern">
-        <rdfs:subClassOf rdf:resource="&si;Layer"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Pattern">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Layer"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Person -->
+    <!-- http://iilab.org/solutionindex#Person -->
 
-    <owl:Class rdf:about="&si;Person">
-        <rdfs:subClassOf rdf:resource="&si;Entity"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Person">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Platform -->
+    <!-- http://iilab.org/solutionindex#Platform -->
 
-    <owl:Class rdf:about="&si;Platform">
-        <rdfs:subClassOf rdf:resource="&si;Technology"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Platform">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Technology"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Problem -->
+    <!-- http://iilab.org/solutionindex#Problem -->
 
-    <owl:Class rdf:about="&si;Problem"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Problem"/>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Process -->
+    <!-- http://iilab.org/solutionindex#Process -->
 
-    <owl:Class rdf:about="&si;Process">
-        <rdfs:subClassOf rdf:resource="&si;Layer"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Process">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Layer"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#ProgrammingLanguage -->
+    <!-- http://iilab.org/solutionindex#ProgrammingLanguage -->
 
-    <owl:Class rdf:about="&si;ProgrammingLanguage">
-        <rdfs:subClassOf rdf:resource="&si;Technology"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#ProgrammingLanguage">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Technology"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Project -->
+    <!-- http://iilab.org/solutionindex#Project -->
 
-    <owl:Class rdf:about="&si;Project">
-        <rdfs:subClassOf rdf:resource="&si;Process"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Project">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Process"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Quadrant -->
+    <!-- http://iilab.org/solutionindex#Quadrant -->
 
-    <owl:Class rdf:about="&si;Quadrant"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Quadrant"/>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Region -->
+    <!-- http://iilab.org/solutionindex#Region -->
 
-    <owl:Class rdf:about="&si;Region">
-        <rdfs:subClassOf rdf:resource="&si;Location"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Region">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Location"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Relationship -->
+    <!-- http://iilab.org/solutionindex#Relationship -->
 
-    <owl:Class rdf:about="&si;Relationship">
-        <rdfs:subClassOf rdf:resource="&si;Pattern"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Relationship">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Pattern"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Sensor -->
+    <!-- http://iilab.org/solutionindex#Sensor -->
 
-    <owl:Class rdf:about="&si;Sensor">
-        <rdfs:subClassOf rdf:resource="&si;Object"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Sensor">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Object"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Skill -->
+    <!-- http://iilab.org/solutionindex#Skill -->
 
-    <owl:Class rdf:about="&si;Skill">
-        <rdfs:subClassOf rdf:resource="&si;Tool"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Skill">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Tool"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Social -->
+    <!-- http://iilab.org/solutionindex#Social -->
 
-    <owl:Class rdf:about="&si;Social">
-        <rdfs:subClassOf rdf:resource="&si;Quadrant"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Social">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Quadrant"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Software -->
+    <!-- http://iilab.org/solutionindex#Software -->
 
-    <owl:Class rdf:about="&si;Software">
-        <rdfs:subClassOf rdf:resource="&si;Technology"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Software">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Technology"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Solution -->
+    <!-- http://iilab.org/solutionindex#Solution -->
 
-    <owl:Class rdf:about="&si;Solution"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Solution"/>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#State -->
+    <!-- http://iilab.org/solutionindex#State -->
 
-    <owl:Class rdf:about="&si;State">
-        <rdfs:subClassOf rdf:resource="&si;Pattern"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#State">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Pattern"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Task -->
+    <!-- http://iilab.org/solutionindex#Task -->
 
-    <owl:Class rdf:about="&si;Task">
-        <rdfs:subClassOf rdf:resource="&si;Process"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Task">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Process"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Technology -->
+    <!-- http://iilab.org/solutionindex#Technology -->
 
-    <owl:Class rdf:about="&si;Technology">
-        <rdfs:subClassOf rdf:resource="&si;Tool"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Technology">
+        <rdfs:subClassOf rdf:resource="http://iilab.org/solutionindex#Tool"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Tool -->
+    <!-- http://iilab.org/solutionindex#Tool -->
 
-    <owl:Class rdf:about="&si;Tool"/>
+    <owl:Class rdf:about="http://iilab.org/solutionindex#Tool"/>
     
 
 
@@ -1467,15 +1468,15 @@
     <!-- http://opencorporates.com -->
 
     <owl:NamedIndividual rdf:about="http://opencorporates.com">
-        <rdf:type rdf:resource="&si;Platform"/>
+        <rdf:type rdf:resource="http://iilab.org/solutionindex#Platform"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/jun/ontologies/2012/10/solutionindex#Gruff -->
+    <!-- http://iilab.org/solutionindex#Gruff -->
 
-    <owl:NamedIndividual rdf:about="&si;Gruff">
-        <rdf:type rdf:resource="&si;Software"/>
+    <owl:NamedIndividual rdf:about="http://iilab.org/solutionindex#Gruff">
+        <rdf:type rdf:resource="http://iilab.org/solutionindex#Software"/>
     </owl:NamedIndividual>
     
 
@@ -1613,70 +1614,70 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&si;City"/>
-            <rdf:Description rdf:about="&si;Continent"/>
-            <rdf:Description rdf:about="&si;Country"/>
-            <rdf:Description rdf:about="&si;Neighborhood"/>
-            <rdf:Description rdf:about="&si;Region"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Behavioral"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Cultural"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Intentional"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Social"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&si;API"/>
-            <rdf:Description rdf:about="&si;Framework"/>
-            <rdf:Description rdf:about="&si;Hardware"/>
-            <rdf:Description rdf:about="&si;Platform"/>
-            <rdf:Description rdf:about="&si;ProgrammingLanguage"/>
-            <rdf:Description rdf:about="&si;Software"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Activity"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Event"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Instance"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Project"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Task"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&si;Activity"/>
-            <rdf:Description rdf:about="&si;Event"/>
-            <rdf:Description rdf:about="&si;Instance"/>
-            <rdf:Description rdf:about="&si;Project"/>
-            <rdf:Description rdf:about="&si;Task"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Location"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Object"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Organisation"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Person"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&si;Behavioral"/>
-            <rdf:Description rdf:about="&si;Cultural"/>
-            <rdf:Description rdf:about="&si;Intentional"/>
-            <rdf:Description rdf:about="&si;Social"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Affiliation"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Intention"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Motivation"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Relationship"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#State"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&si;Affiliation"/>
-            <rdf:Description rdf:about="&si;Intention"/>
-            <rdf:Description rdf:about="&si;Motivation"/>
-            <rdf:Description rdf:about="&si;Relationship"/>
-            <rdf:Description rdf:about="&si;State"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Concept"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Data"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Entity"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Pattern"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Process"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&si;Location"/>
-            <rdf:Description rdf:about="&si;Object"/>
-            <rdf:Description rdf:about="&si;Organisation"/>
-            <rdf:Description rdf:about="&si;Person"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#API"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Framework"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Hardware"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Platform"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#ProgrammingLanguage"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Software"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&si;Concept"/>
-            <rdf:Description rdf:about="&si;Data"/>
-            <rdf:Description rdf:about="&si;Entity"/>
-            <rdf:Description rdf:about="&si;Pattern"/>
-            <rdf:Description rdf:about="&si;Process"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#City"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Continent"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Country"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Neighborhood"/>
+            <rdf:Description rdf:about="http://iilab.org/solutionindex#Region"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
